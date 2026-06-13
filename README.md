@@ -47,40 +47,36 @@ I am very obsessed with tech and infrastructure and that's what keeps me to do w
 ---
 
 <details>
-<summary>📡 Click to expand full infrastructure diagram (June 13, 2026)</summary>
+<summary>📡 Click to expand full infrastructure diagram [No ELK] (June 13, 2026)</summary>
   
 ```mermaid
----
-config:
-  layout: elk
----
 flowchart TB
   subgraph PublicEdge["📡 Public Edge Layer"]
     WAF["Cloudflare Edge"]
     CFTunnel["Cloudflare Tunnel"]
   end
 
-  subgraph Internet["🌍 Public Internet"]
-    Users["End Users"]
-    Slack["Slack Channel"]
-  end
+subgraph Internet["🌍 Public Internet"]
+Users["End Users"]
+Slack["Slack Channel"]
+end
 
-  subgraph CI_CD["🔄 GHA CI/CD Pipeline"]
-    Git["GitHub Repo CI/CD"]
-    ALint["Ansible Lint"]
-    Molecule["Molecule Testing"]
-    CiCheck["Linter/Formatter/StaticAnalysis"]
-    Trivy["Trivy Security Scan"]
-    GHCR["Github Registry"]
-  end
+subgraph CI_CD["🔄 GHA CI/CD Pipeline"]
+Git["GitHub Repo CI/CD"]
+ALint["Ansible Lint"]
+Molecule["Molecule Testing"]
+CiCheck["Linter/Formatter/StaticAnalysis"]
+Trivy["Trivy Security Scan"]
+GHCR["Github Registry"]
+end
 
-  subgraph Tailscale["🌐 Tailscale Devices"]
-    subgraph MainDevices["🖥️💻 Main Devices"]
-      MainPC["MainPC"]
-      MainLaptop["MainLaptop"]
-      Ansible["Master Ansible"]
-      Terraform["Master Terraform"]
-    end
+subgraph Tailscale["🌐 Tailscale Devices"]
+subgraph MainDevices["🖥️💻 Main Devices"]
+MainPC["MainPC"]
+MainLaptop["MainLaptop"]
+Ansible["Master Ansible"]
+Terraform["Master Terraform"]
+end
 
     subgraph MainPC["🖥️ Personal Computer"]
       Ollama["Local Ollama Models"] --> SSH1["SSH Keys"]
@@ -93,10 +89,10 @@ flowchart TB
       subgraph SSHD1["🔒 SSHD Configs"]
         F2B["Fail2ban"] --> NoIP["No Local IP SSH"] --> Port22["Only on Port 22"] --> UFW["Only allow Tailscale Devices"] --> AKeys["No Key, No Entry"] --> APerms["No Root Login"] --> Access["SSH Completed"]
       end
-      
+
       subgraph Docker["🐳 Docker Containers"]
         DLogs["Docker Logs"]
-        
+
         subgraph DiagramStack["📊 Compose - Diagram Stack (Observability Experimentation Application)"]
           Frontend2["React/Vite Frontend (Diagram)"]
           subgraph Backend2["Node.js Backend (Diagram)"]
@@ -133,44 +129,47 @@ flowchart TB
         end
       end
     end
-  end
 
-  Git -- CI Check --> ALint & CiCheck
-  CiCheck -- Action --> Trivy
-  ALint -- Deploy --> Molecule
-  Molecule -- Deploy --> SSHD1
-  Trivy -- Build/Push --> GHCR
+end
 
-  Users -- HTTPS --> WAF --> CFTunnel
-  CFTunnel -. HTTPS .-> DOCfD
-  DOCfD --> DONginx
-  DONginx -- HTTP --> Frontend & Backend
-  SSH1 & SSH2 -- Tailscale Tunnel --> SSHD1
+Git -- CI Check --> ALint & CiCheck
+CiCheck -- Action --> Trivy
+ALint -- Deploy --> Molecule
+Molecule -- Deploy --> SSHD1
+Trivy -- Build/Push --> GHCR
 
-  Frontend & Backend -- Pull w/Token --> GHCR
-  Frontend2 & Nodejs2 -- Pull w/Token --> GHCR
+Users -- HTTPS --> WAF --> CFTunnel
+CFTunnel -. HTTPS .-> DOCfD
+DOCfD --> DONginx
+DONginx -- HTTP --> Frontend & Backend
+SSH1 & SSH2 -- Tailscale Tunnel --> SSHD1
 
-  Alloy -- Scrape Logs --> DLogs
-  Alloy -- Remote Write --> Prom
-  Alloy -- Loki Push --> Loki
-  Alloy -- OTLP --> Tempo
-  Prom & Loki & Tempo -- Query --> Grafana
-  Prom -- Alerting Rules --> AManager --> Slack
+Frontend & Backend -- Pull w/Token --> GHCR
+Frontend2 & Nodejs2 -- Pull w/Token --> GHCR
 
-  Frontend2 -. Frontend Logs/Traces .-> Alloy
-  OTLPDep & OTLPDep2 -. OTLP Metrics & Spans .-> Alloy
-  PostgresExporter -- Scrapes Metrics --> Postgres
-  PostgresExporter -. Metrics :9187 .-> Alloy
-</details>
+Alloy -- Scrape Logs --> DLogs
+Alloy -- Remote Write --> Prom
+Alloy -- Loki Push --> Loki
+Alloy -- OTLP --> Tempo
+Prom & Loki & Tempo -- Query --> Grafana
+Prom -- Alerting Rules --> AManager --> Slack
+
+Frontend2 -. Frontend Logs/Traces .-> Alloy
+OTLPDep & OTLPDep2 -. OTLP Metrics & Spans .-> Alloy
+PostgresExporter -- Scrapes Metrics --> Postgres
+PostgresExporter -. Metrics :9187 .-> Alloy
+
 ```
+</details>
+
 ---
 
 ## 📝 Featured Blog Posts
 
 *From my [portfolio blog](https://portfolio.seekeru.tech/blog)*
 
-- 🔥 [**Telemetry Madness**](https://portfolio.seekeru.tech/blog/telemetry-madness) – *I let AI generate my observability stack, then watched it fail silently. Rebuilt from first principles with curl, Alloy, and an MVP OpenTelemetry app.*  
-- ⏱️ [**SRE Steps**](https://portfolio.seekeru.tech/blog/sre-steps) – *Building a reliable kill script to measure real MTTD/MTTR in containerized infrastructure.*  
+- 🔥 [**Telemetry Madness**](https://portfolio.seekeru.tech/blog/telemetry-madness) – *I let AI generate my observability stack, then watched it fail silently. Rebuilt from first principles with curl, Alloy, and an MVP OpenTelemetry app.*
+- ⏱️ [**SRE Steps**](https://portfolio.seekeru.tech/blog/sre-steps) – *Building a reliable kill script to measure real MTTD/MTTR in containerized infrastructure.*
 - 🛡️ [**Imposter Syndrome**](https://portfolio.seekeru.tech/blog/imposter-syndrome) – *Escaping the blackbox.*
 
 ---
@@ -212,12 +211,13 @@ I'm looking for **internship / entry‑level** opportunities (remote or hybrid).
 or if you just talk in general about tech or even be my peer then you can message me! (I would be glad to)
 Let's move forward together!
 
-- 📧 [stpmacabulos@gmail.com](mailto:stpmacabulos@gmail.com)  
-- 🔗 [LinkedIn](https://linkedin.com/in/stephen-macabulos)  
-- 🌐 [Portfolio, Blogs & Infra](https://portfolio.seekeru.tech)  
+- 📧 [stpmacabulos@gmail.com](mailto:stpmacabulos@gmail.com)
+- 🔗 [LinkedIn](https://linkedin.com/in/stephen-macabulos)
+- 🌐 [Portfolio, Blogs & Infra](https://portfolio.seekeru.tech)
 
 ---
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=notseekeru&label=Profile%20Views&color=00B8FF&style=flat-square" />
 </p>
+```
