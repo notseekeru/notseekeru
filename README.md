@@ -161,56 +161,6 @@ flowchart TB
   OTLPDep & OTLPDep2 -. OTLP Metrics & Spans .-> Alloy
   PostgresExporter -- Scrapes Metrics --> Postgres
   PostgresExporter -. Metrics :9187 .-> Alloy
-
-  WAF:::edgeLayer
-  CFTunnel:::edgeLayer
-  Users:::edgeLayer
-  Slack:::edgeLayer
-  Git:::gha
-  ALint:::gha
-  Molecule:::gha
-  CiCheck:::gha
-  Trivy:::gha
-  GHCR:::gha
-  Ollama:::vmLayer
-  SSH1:::vmLayer
-  Terraform:::vmLayer
-  Ansible:::vmLayer
-  SSH2:::vmLayer
-  F2B:::netLayer
-  NoIP:::netLayer
-  Port22:::netLayer
-  UFW:::netLayer
-  AKeys:::netLayer
-  APerms:::netLayer
-  Access:::netLayer
-  DLogs:::container
-  Frontend:::container
-  Backend:::container
-  Alloy:::container
-  Prom:::container
-  Loki:::container
-  Tempo:::container
-  Grafana:::container
-  AManager:::container
-  DONginx:::container
-  DOCfD:::container
-  Droplet1:::physical
-  Frontend2:::container
-  Nodejs2:::container
-  OTLPDep:::container
-  OTLPDep2:::container
-  Postgres:::container
-  PostgresExporter:::container
-
-  classDef edgeLayer fill:#b30000,stroke:#ff4d4d,stroke-width:2px,color:#ffffff
-  classDef netLayer fill:#0059b3,stroke:#3399ff,stroke-width:2px,color:#ffffff
-  classDef physical fill:#333333,stroke:#666666,stroke-width:2px,color:#ffffff
-  classDef container fill:#008080,stroke:#00cbcb,stroke-width:2px,color:#ffffff
-  classDef vmLayer fill:#6a0db2,stroke:#b366ff,stroke-width:2px,color:#ffffff
-  classDef storage fill:#b37400,stroke:#ffbf4d,stroke-width:2px,color:#ffffff
-  classDef gha fill:#3d802e,stroke:#b2ffa1,stroke-width:2px,color:#ffffff
-
 </details>
 ```
 ---
