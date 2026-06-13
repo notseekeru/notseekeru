@@ -1,6 +1,6 @@
 <!-- Header with dynamic stats and badges -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00B8FF&center=true&vCenter=true&width=435&lines=Aspiring+SRE+%7C+Platform+Engineer;Homelab+%7C+Observability+%7C+IaC" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00B8FF&center=true&vCenter=true&width=500&lines=Aspiring+=+SRE+%7C+DevOps+%7C+Platform;Homelab+%7C+Observability+%7C+IaC" alt="Typing SVG" />
 </p>
 
 <h1 align="center">Stephen Macabulos</h1>
@@ -33,7 +33,7 @@
 
 ## 🧑‍💻 About Me
 
-2nd Year Computer Engineering student from the Philippines, driven by hunger and a will to learn. (sounds corny)
+2nd Year Computer Engineering student from the Philippines, driven by hunger and a will to do the work and learn.
 I am very obsessed with tech and infrastructure and that's what keeps me to do what I do.
 
 🎯 Current Goal: Designing and Building Distributed Systems and Learning and applying System Design Concepts
@@ -54,7 +54,7 @@ I am very obsessed with tech and infrastructure and that's what keeps me to do w
 ---
 
 <details>
-<summary>📡 Click to expand full infrastructure diagram [No ELK] (June 13, 2026)</summary>
+<summary>📡 Click to expand full infrastructure diagram [No ELK Gen] (June 13, 2026)</summary>
   
 ```mermaid
 flowchart TB
