@@ -182,37 +182,6 @@ _From my [portfolio blog](https://portfolio.seekeru.tech/blog)_
 
 ---
 
-## 🚀 Featured Projects
-
-<table width="100%">
-  <tr>
-    <td width="100%" valign="top">
-      <h3>📦 Ansible Automation</h3>
-      <p>CIS Level‑1 hardening, Tailscale bootstrap, Molecule tests, idempotent roles.</p>
-      <p><code>ansible-lint</code> <code>Jinja</code> <code>Makefile</code></p>
-      <a href="https://github.com/notseekeru/ansible"><img src="https://img.shields.io/badge/Repository-181717?style=flat-square&logo=github&logoColor=white"></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="100%" valign="top">
-      <h3>🏗️ Terraform IaC</h3>
-      <p>DigitalOcean droplets + SSH keys + dynamic inventory for Ansible.</p>
-      <p><code>HCL</code> <code>Makefile</code> <code>DO Template</code></p>
-      <a href="https://github.com/notseekeru/terraform"><img src="https://img.shields.io/badge/Repository-181717?style=flat-square&logo=github&logoColor=white"></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="100%" valign="top">
-      <h3>📊 Diagram Website + Observability</h3>
-      <p>CRUD Mermaid diagrams, chaos scripts, LGTM+Alloy pipeline, Traffic Simulation.</p>
-      <p><code>TypeScript</code> <code>React</code> <code>Node.js</code></p>
-      <a href="https://github.com/notseekeru/diagram_website"><img src="https://img.shields.io/badge/Repository-181717?style=flat-square&logo=github&logoColor=white"></a>
-    </td>
-  </tr>
-</table>
-
----
-
 ## 📫 Let's Connect
 
 I'm looking for **internship / entry‑level** opportunities (remote or hybrid).
