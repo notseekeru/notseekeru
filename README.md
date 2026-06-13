@@ -30,11 +30,6 @@ Computer Engineering student building **production-grade infrastructure** from t
 I run a hybrid‑cloud homelab (Raspberry Pi + DigitalOcean) with full observability (LGTM+Alloy), chaos experiments, and infrastructure‑as‑code (Terraform, Ansible).  
 I document everything — failures, fixes, architecture decisions — so I (and others) can learn.
 
-- 🔭 Currently: Hardening my LGTM stack & writing about MTTD/MTTR  
-- 🌱 Learning: Go (for performance tooling), deeper networking (CCNA path)  
-- 🧠 Believer in: `boring deployments` + `chaos engineering` + `idempotent automation`  
-- ⚡ Fun fact: I once debugged a telemetry blackout for 6 hours – the fix was `extra_hosts: host.docker.internal`.
-
 ---
 
 ## 📈 GitHub Stats
@@ -50,14 +45,13 @@ I document everything — failures, fixes, architecture decisions — so I (and 
 
 ---
 
-## 📝 Latest Blog Posts
+## 📝 Featured Blog Posts
 
 *From my [portfolio blog](https://portfolio.seekeru.tech/blog)*
 
-- 🔥 [**Telemetry Madness**](https://portfolio.seekeru.tech/blog/telemetry-madness) – *I let AI generate my observability stack, then watched it fail silently. Rebuilt from first principles with curl, Alloy, and a Postgres blackout.*  
+- 🔥 [**Telemetry Madness**](https://portfolio.seekeru.tech/blog/telemetry-madness) – *I let AI generate my observability stack, then failed. Rebuilt from first principles with curl, Alloy, and an MVP Opentelemetry application.*  
 - ⏱️ [**SRE Steps**](https://portfolio.seekeru.tech/blog/sre-steps) – *Building a reliable kill script to measure real MTTD/MTTR in containerized infrastructure.*  
-- 📡 [**Observing the Lab**](https://portfolio.seekeru.tech/blog/observing-the-lab) – *Architecting LGTM + Alloy on RPi5 for logs, metrics, and traces.*  
-- 🛡️ [**Server Security Measures**](https://portfolio.seekeru.tech/blog/server-security-measures) – *From standard Linux to hardened edge gateway.*
+- 🛡️ [**Imposter Syndrome**](https://portfolio.seekeru.tech/blog/imposter-syndrome) – *Escaping the blackbox.*
 
 ---
 
@@ -71,25 +65,19 @@ I document everything — failures, fixes, architecture decisions — so I (and 
       <p><code>ansible-lint</code> <code>Jinja</code> <code>Makefile</code></p>
       <a href="https://github.com/notseekeru/ansible"><img src="https://img.shields.io/badge/Repository-181717?style=flat-square&logo=github&logoColor=white"></a>
     </td>
-    <td width="50%">
-      <h3>🏗️ Terraform Cloud</h3>
+    <td width="100%">
+      <h3>🏗️ Terraform IaC</h3>
       <p>DigitalOcean droplets + SSH keys + dynamic inventory for Ansible.</p>
       <p><code>HCL</code> <code>Makefile</code> <code>Go Template</code></p>
       <a href="https://github.com/notseekeru/terraform"><img src="https://img.shields.io/badge/Repository-181717?style=flat-square&logo=github&logoColor=white"></a>
     </td>
   </tr>
   <tr>
-    <td width="50%">
+    <td width="100%">
       <h3>📊 Diagram Website + Observability</h3>
       <p>CRUD Mermaid diagrams, chaos scripts, LGTM+Alloy pipeline, black‑box testing.</p>
       <p><code>TypeScript</code> <code>React</code> <code>Node.js</code></p>
       <a href="https://github.com/notseekeru/diagram_website"><img src="https://img.shields.io/badge/Repository-181717?style=flat-square&logo=github&logoColor=white"></a>
-    </td>
-    <td width="50%">
-      <h3>📈 Homelab Observability Stack</h3>
-      <p>Prometheus + Loki + Tempo + Grafana Alloy + Alertmanager on RPi5 & DigitalOcean.</p>
-      <p><code>YAML</code> <code>OTLP</code> <code>Docker Compose</code></p>
-      <a href="https://github.com/notseekeru/diagram_website"><img src="https://img.shields.io/badge/Inside_Diagram_Repo-181717?style=flat-square&logo=github&logoColor=white"></a>
     </td>
   </tr>
 </table>
@@ -107,12 +95,11 @@ I document everything — failures, fixes, architecture decisions — so I (and 
 
 ## 📫 Let's Connect
 
-I'm looking for **internship / entry‑level SRE / Platform Engineering** opportunities (remote or hybrid).  
-If you need someone who can build, break, and fix infrastructure — let's talk.
+I'm looking for **internship / entry‑level** opportunities (remote or hybrid).  
 
 - 📧 [stpmacabulos@gmail.com](mailto:stpmacabulos@gmail.com)  
 - 🔗 [LinkedIn](https://linkedin.com/in/stephen-macabulos)  
-- 🌐 [Portfolio & Blog](https://portfolio.seekeru.tech)  
+- 🌐 [Portfolio, Blogs and Infrastructure](https://portfolio.seekeru.tech)  
 
 ---
 
