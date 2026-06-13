@@ -40,10 +40,8 @@ I am very obsessed with tech and infrastructure and that's what keeps me to do w
 
 ---
 
-## 📈 GitHub Stats
-
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=notseekeru&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00B8FF&icon_color=00B8FF&text_color=EEEEEE" />
+  <img width="36%" src="https://github-readme-stats.vercel.app/api?username=notseekeru&include_all_commits=true&hide_rank=true&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00B8FF&icon_color=00B8FF&text_color=EEEEEE" />
   <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=notseekeru&theme=dark&hide_border=true&background=0D1117&stroke=00B8FF&ring=00B8FF&fire=00B8FF&currStreakNum=EEEEEE" />
 </p>
 
@@ -178,7 +176,7 @@ _From my [portfolio blog](https://portfolio.seekeru.tech/blog)_
 
 - 🔥 [**Telemetry Madness**](https://portfolio.seekeru.tech/blog/telemetry-madness) – _I let AI generate my observability stack, then watched it fail silently. Rebuilt from first principles with curl, Alloy, and an MVP OpenTelemetry app._
 - ⏱️ [**SRE Steps**](https://portfolio.seekeru.tech/blog/sre-steps) – _Building a reliable kill script to measure real MTTD/MTTR in containerized infrastructure._
-- 🛡️ [**Imposter Syndrome**](https://portfolio.seekeru.tech/blog/imposter-syndrome) – _Escaping the blackbox._
+- 🛡️ [**Imposter Syndrome**](https://portfolio.seekeru.tech/blog/imposter-syndrome) – _Escaping the blackbox with the fundamentals._
 
 ---
 
