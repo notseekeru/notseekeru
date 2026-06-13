@@ -1,6 +1,6 @@
 <!-- Header with dynamic stats and badges -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00B8FF&center=true&vCenter=true&width=500&lines=Aspiring+=+SRE+%7C+DevOps+%7C+Platform;Homelab+%7C+Observability+%7C+IaC" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00B8FF&center=true&vCenter=true&width=500&lines=Aspiring+SRE+%7C+DevOps+%7C+Platform;Homelab+%7C+Observability+%7C+IaC" alt="Typing SVG" />
 </p>
 
 <h1 align="center">Stephen Macabulos</h1>
@@ -54,7 +54,7 @@ I am very obsessed with tech and infrastructure and that's what keeps me to do w
 ---
 
 <details>
-<summary>📡 Click to expand full infrastructure diagram [No ELK Gen] (June 13, 2026)</summary>
+<summary>📡 Click to expand full infrastructure diagram (June 13, 2026)</summary>
 
 ```mermaid
 flowchart TB
