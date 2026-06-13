@@ -197,7 +197,7 @@ _From my [portfolio blog](https://portfolio.seekeru.tech/blog)_
     <td width="100%" valign="top">
       <h3>🏗️ Terraform IaC</h3>
       <p>DigitalOcean droplets + SSH keys + dynamic inventory for Ansible.</p>
-      <p><code>HCL</code> <code>Makefile</code> <code>Go Template</code></p>
+      <p><code>HCL</code> <code>Makefile</code> <code>DO Template</code></p>
       <a href="https://github.com/notseekeru/terraform"><img src="https://img.shields.io/badge/Repository-181717?style=flat-square&logo=github&logoColor=white"></a>
     </td>
   </tr>
