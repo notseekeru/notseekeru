@@ -48,6 +48,7 @@ I am very obsessed with tech and infrastructure and that's what keeps me to do w
 
 <details>
 <summary>📡 Click to expand full infrastructure diagram (June 13, 2026)</summary>
+  
 ```mermaid
 ---
 config:
@@ -209,8 +210,9 @@ flowchart TB
   classDef vmLayer fill:#6a0db2,stroke:#b366ff,stroke-width:2px,color:#ffffff
   classDef storage fill:#b37400,stroke:#ffbf4d,stroke-width:2px,color:#ffffff
   classDef gha fill:#3d802e,stroke:#b2ffa1,stroke-width:2px,color:#ffffff
-```
+
 </details>
+```
 ---
 
 ## 📝 Featured Blog Posts
