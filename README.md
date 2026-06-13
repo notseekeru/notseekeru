@@ -55,7 +55,7 @@ I am very obsessed with tech and infrastructure and that's what keeps me to do w
 
 <details>
 <summary>📡 Click to expand full infrastructure diagram [No ELK Gen] (June 13, 2026)</summary>
-  
+
 ```mermaid
 flowchart TB
   subgraph PublicEdge["📡 Public Edge Layer"]
@@ -63,31 +63,32 @@ flowchart TB
     CFTunnel["Cloudflare Tunnel"]
   end
 
-subgraph Internet["🌍 Public Internet"]
-Users["End Users"]
-Slack["Slack Channel"]
-end
+  subgraph Internet["🌍 Public Internet"]
+    Users["End Users"]
+    Slack["Slack Channel"]
+  end
 
-subgraph CI_CD["🔄 GHA CI/CD Pipeline"]
-Git["GitHub Repo CI/CD"]
-ALint["Ansible Lint"]
-Molecule["Molecule Testing"]
-CiCheck["Linter/Formatter/StaticAnalysis"]
-Trivy["Trivy Security Scan"]
-GHCR["Github Registry"]
-end
+  subgraph CI_CD["🔄 GHA CI/CD Pipeline"]
+    Git["GitHub Repo CI/CD"]
+    ALint["Ansible Lint"]
+    Molecule["Molecule Testing"]
+    CiCheck["Linter/Formatter/StaticAnalysis"]
+    Trivy["Trivy Security Scan"]
+    GHCR["Github Registry"]
+  end
 
-subgraph Tailscale["🌐 Tailscale Devices"]
-subgraph MainDevices["🖥️💻 Main Devices"]
-MainPC["MainPC"]
-MainLaptop["MainLaptop"]
-Ansible["Master Ansible"]
-Terraform["Master Terraform"]
-end
+  subgraph Tailscale["🌐 Tailscale Devices"]
+    subgraph MainDevices["🖥️💻 Main Devices"]
+      MainPC["MainPC"]
+      MainLaptop["MainLaptop"]
+      Ansible["Master Ansible"]
+      Terraform["Master Terraform"]
+    end
 
     subgraph MainPC["🖥️ Personal Computer"]
       Ollama["Local Ollama Models"] --> SSH1["SSH Keys"]
     end
+
     subgraph MainLaptop["💻 Personal Laptop"]
       SSH2["SSH Keys"]
     end
@@ -136,48 +137,48 @@ end
         end
       end
     end
+  end
 
-end
+  Git -- CI Check --> ALint & CiCheck
+  CiCheck -- Action --> Trivy
+  ALint -- Deploy --> Molecule
+  Molecule -- Deploy --> SSHD1
+  Trivy -- Build/Push --> GHCR
 
-Git -- CI Check --> ALint & CiCheck
-CiCheck -- Action --> Trivy
-ALint -- Deploy --> Molecule
-Molecule -- Deploy --> SSHD1
-Trivy -- Build/Push --> GHCR
+  Users -- HTTPS --> WAF --> CFTunnel
+  CFTunnel -. HTTPS .-> DOCfD
+  DOCfD --> DONginx
+  DONginx -- HTTP --> Frontend & Backend
+  SSH1 & SSH2 -- Tailscale Tunnel --> SSHD1
 
-Users -- HTTPS --> WAF --> CFTunnel
-CFTunnel -. HTTPS .-> DOCfD
-DOCfD --> DONginx
-DONginx -- HTTP --> Frontend & Backend
-SSH1 & SSH2 -- Tailscale Tunnel --> SSHD1
+  Frontend & Backend -- Pull w/Token --> GHCR
+  Frontend2 & Nodejs2 -- Pull w/Token --> GHCR
 
-Frontend & Backend -- Pull w/Token --> GHCR
-Frontend2 & Nodejs2 -- Pull w/Token --> GHCR
+  Alloy -- Scrape Logs --> DLogs
+  Alloy -- Remote Write --> Prom
+  Alloy -- Loki Push --> Loki
+  Alloy -- OTLP --> Tempo
+  Prom & Loki & Tempo -- Query --> Grafana
+  Prom -- Alerting Rules --> AManager --> Slack
 
-Alloy -- Scrape Logs --> DLogs
-Alloy -- Remote Write --> Prom
-Alloy -- Loki Push --> Loki
-Alloy -- OTLP --> Tempo
-Prom & Loki & Tempo -- Query --> Grafana
-Prom -- Alerting Rules --> AManager --> Slack
-
-Frontend2 -. Frontend Logs/Traces .-> Alloy
-OTLPDep & OTLPDep2 -. OTLP Metrics & Spans .-> Alloy
-PostgresExporter -- Scrapes Metrics --> Postgres
-PostgresExporter -. Metrics :9187 .-> Alloy
+  Frontend2 -. Frontend Logs/Traces .-> Alloy
+  OTLPDep & OTLPDep2 -. OTLP Metrics & Spans .-> Alloy
+  PostgresExporter -- Scrapes Metrics --> Postgres
+  PostgresExporter -. Metrics :9187 .-> Alloy
 
 ```
+
 </details>
 
 ---
 
 ## 📝 Featured Blog Posts
 
-*From my [portfolio blog](https://portfolio.seekeru.tech/blog)*
+_From my [portfolio blog](https://portfolio.seekeru.tech/blog)_
 
-- 🔥 [**Telemetry Madness**](https://portfolio.seekeru.tech/blog/telemetry-madness) – *I let AI generate my observability stack, then watched it fail silently. Rebuilt from first principles with curl, Alloy, and an MVP OpenTelemetry app.*
-- ⏱️ [**SRE Steps**](https://portfolio.seekeru.tech/blog/sre-steps) – *Building a reliable kill script to measure real MTTD/MTTR in containerized infrastructure.*
-- 🛡️ [**Imposter Syndrome**](https://portfolio.seekeru.tech/blog/imposter-syndrome) – *Escaping the blackbox.*
+- 🔥 [**Telemetry Madness**](https://portfolio.seekeru.tech/blog/telemetry-madness) – _I let AI generate my observability stack, then watched it fail silently. Rebuilt from first principles with curl, Alloy, and an MVP OpenTelemetry app._
+- ⏱️ [**SRE Steps**](https://portfolio.seekeru.tech/blog/sre-steps) – _Building a reliable kill script to measure real MTTD/MTTR in containerized infrastructure._
+- 🛡️ [**Imposter Syndrome**](https://portfolio.seekeru.tech/blog/imposter-syndrome) – _Escaping the blackbox._
 
 ---
 
@@ -227,4 +228,3 @@ Let's move forward together!
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=notseekeru&label=Profile%20Views&color=00B8FF&style=flat-square" />
 </p>
-```
