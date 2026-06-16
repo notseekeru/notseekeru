@@ -183,9 +183,3 @@ Let's move forward together!
 - 📧 [stpmacabulos@gmail.com](mailto:stpmacabulos@gmail.com)
 - 🔗 [LinkedIn](https://linkedin.com/in/stephen-macabulos)
 - 🌐 [Portfolio, Blogs & Infra](https://portfolio.seekeru.tech)
-
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=notseekeru&label=Profile%20Views&color=00B8FF&style=flat-square" />
-</p>
