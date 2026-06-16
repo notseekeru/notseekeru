@@ -36,6 +36,8 @@
 2nd Year Computer Engineering student from the Philippines, driven by hunger and a will to do the work and learn.
 I am very obsessed with tech and infrastructure and that's what keeps me to do what I do.
 
+> Currently my infrastructure repo private for privacy and security reasons
+
 🎯 Current Goal: Designing and Building Distributed Systems and Learning and applying System Design Concepts
 
 ---
@@ -49,16 +51,17 @@ I am very obsessed with tech and infrastructure and that's what keeps me to do w
 <summary>📡 Click to expand full infrastructure diagram (June 13, 2026)</summary>
 
 ```mermaid
+---
+config:
+  layout: elk
+---
 flowchart TB
-  subgraph PublicEdge["📡 Public Edge Layer"]
-    WAF["Cloudflare Edge"]
-    CFTunnel["Cloudflare Tunnel"]
-  end
-
   subgraph Internet["🌍 Public Internet"]
     Users["End Users"]
     Slack["Slack Channel"]
+    CloudflareEdge["Cloudflare Edge"]
   end
+
 
   subgraph CI_CD["🔄 GHA CI/CD Pipeline"]
     Git["GitHub Repo CI/CD"]
@@ -69,18 +72,19 @@ flowchart TB
     GHCR["Github Registry"]
   end
 
-  subgraph Tailscale["🌐 Tailscale Devices"]
+subgraph Tailscale["Tailscale"]
     subgraph MainDevices["🖥️💻 Main Devices"]
+      
       MainPC["MainPC"]
       MainLaptop["MainLaptop"]
       Ansible["Master Ansible"]
       Terraform["Master Terraform"]
+      Kubectl["Kubernetes Control Plane"]
     end
 
     subgraph MainPC["🖥️ Personal Computer"]
       Ollama["Local Ollama Models"] --> SSH1["SSH Keys"]
     end
-
     subgraph MainLaptop["💻 Personal Laptop"]
       SSH2["SSH Keys"]
     end
@@ -89,10 +93,10 @@ flowchart TB
       subgraph SSHD1["🔒 SSHD Configs"]
         F2B["Fail2ban"] --> NoIP["No Local IP SSH"] --> Port22["Only on Port 22"] --> UFW["Only allow Tailscale Devices"] --> AKeys["No Key, No Entry"] --> APerms["No Root Login"] --> Access["SSH Completed"]
       end
-
+      
       subgraph Docker["🐳 Docker Containers"]
         DLogs["Docker Logs"]
-
+        
         subgraph DiagramStack["📊 Compose - Diagram Stack (Observability Experimentation Application)"]
           Frontend2["React/Vite Frontend (Diagram)"]
           subgraph Backend2["Node.js Backend (Diagram)"]
@@ -114,37 +118,33 @@ flowchart TB
         end
       end
     end
+  end
 
-    subgraph DigitalOcean["💧 DigitalOcean Cloud"]
-      subgraph Droplet1[" Debian Droplet"]
-        Falco["Falco Security"]
-        subgraph DODocker["🐳 Docker Compose - Traffic Stack"]
-          DONginx["Nginx Reverse Proxy"]
-          DOCfD["Cloudflared Container"]
-        end
+  subgraph DOKS["☸️ DOKS (3-Node Cluster)"]
+    ArgoCD["ArgoCD Operator"]
+    Ingress["Ingress-Nginx Controller"]
+    TunnelPod["Cloudflared Pod"]
 
-        subgraph AppLayer["💼 Compose - Portfolio Stack (No Telemetry)"]
-          Frontend["React/Vite Frontend"]
-          Backend["Node.js Backend"]
-        end
-      end
+    subgraph Workloads["⚙️ Namespaces"]
+      AppPod["Portfolio Pods (Frontend/Backend)"]
+      DBPod["Postgres StatefulSet"]
     end
   end
 
+  Workloads -- Kubelet pulls image --> GHCR
+  ArgoCD -- Updates Manifest --> Workloads
+  TunnelPod -- Internal K8s Service --> Ingress
+  Ingress -- Route --> AppPod
+  AppPod -- Internal Service --> DBPod
+
+  CloudflareEdge -- QUIC/HTTPS --> TunnelPod
   Git -- CI Check --> ALint & CiCheck
-  CiCheck -- Action --> Trivy
+  CiCheck --> Trivy
   ALint -- Deploy --> Molecule
   Molecule -- Deploy --> SSHD1
   Trivy -- Build/Push --> GHCR
 
-  Users -- HTTPS --> WAF --> CFTunnel
-  CFTunnel -. HTTPS .-> DOCfD
-  DOCfD --> DONginx
-  DONginx -- HTTP --> Frontend & Backend
   SSH1 & SSH2 -- Tailscale Tunnel --> SSHD1
-
-  Frontend & Backend -- Pull w/Token --> GHCR
-  Frontend2 & Nodejs2 -- Pull w/Token --> GHCR
 
   Alloy -- Scrape Logs --> DLogs
   Alloy -- Remote Write --> Prom
@@ -157,6 +157,7 @@ flowchart TB
   OTLPDep & OTLPDep2 -. OTLP Metrics & Spans .-> Alloy
   PostgresExporter -- Scrapes Metrics --> Postgres
   PostgresExporter -. Metrics :9187 .-> Alloy
+
 
 ```
 
