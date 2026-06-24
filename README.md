@@ -66,25 +66,35 @@ flowchart TB
     CloudflareEdge["Cloudflare Edge"]
   end
 
-
   subgraph CI_CD["🔄 GHA CI/CD Pipeline"]
     Git["GitHub Repo CI/CD"]
     ALint["Ansible Lint"]
     Molecule["Molecule Testing"]
-    CiCheck["Linter/Formatter/StaticAnalysis"]
+    CiCheck["Linter/Formatter/StaticAnalysis/Audit"]
     Trivy["Trivy Security Scan"]
     GHCR["Github Registry"]
+
+    Git --> ALint & CiCheck
+    CiCheck --> Trivy
+    ALint --> Molecule
+    Trivy --> GHCR
   end
 
-subgraph Tailscale["Tailscale"]
+  subgraph Tailscale["Tailscale"]
     subgraph MainDevices["🖥️💻 Main Devices"]
-      
       MainPC["MainPC"]
       MainLaptop["MainLaptop"]
       Ansible["Master Ansible"]
       Terraform["Master Terraform"]
       Kubectl["Kubernetes Control Plane"]
+      Kubeconfig["kubeconfig"]
+      DynamicInven["Dynamic Inventory"]
     end
+
+    Kubectl --> Kubeconfig
+    Terraform --> Kubeconfig
+    Terraform --> DynamicInven
+    Ansible --> DynamicInven
 
     subgraph MainPC["🖥️ Personal Computer"]
       Ollama["Local Ollama Models"] --> SSH1["SSH Keys"]
@@ -92,6 +102,8 @@ subgraph Tailscale["Tailscale"]
     subgraph MainLaptop["💻 Personal Laptop"]
       SSH2["SSH Keys"]
     end
+
+    SSH1 & SSH2 --> SSHD1
 
     subgraph Pi5["⚙️ Node - Raspberry Pi 5"]
       subgraph SSHD1["🔒 SSHD Configs"]
@@ -110,6 +122,11 @@ subgraph Tailscale["Tailscale"]
           end
           Postgres["Postgres DB :5432"]
           PostgresExporter["Postgres Exporter :9187"]
+
+          Frontend2 -.-> Alloy
+          OTLPDep & OTLPDep2 -.-> Alloy
+          PostgresExporter --> Postgres
+          PostgresExporter -.-> Alloy
         end
 
         subgraph ObservabilityStack["📊 Compose - Observability Stack (LGTM + Alloy)"]
@@ -119,6 +136,14 @@ subgraph Tailscale["Tailscale"]
           Tempo["Tempo:3200"]
           Grafana["Grafana Visualization :3030"]
           AManager["AlertManager:9093"]
+
+          Alloy --> DLogs
+          Alloy --> Prom
+          Alloy --> Loki
+          Alloy --> Tempo
+          Prom & Loki & Tempo --> Grafana
+          Prom --> AManager
+          AManager --> Slack
         end
       end
     end
@@ -130,37 +155,17 @@ subgraph Tailscale["Tailscale"]
     TunnelPod["Cloudflared Pod"]
 
     subgraph Workloads["⚙️ Namespaces"]
-      AppPod["Portfolio Pods (Frontend/Backend)"]
-      DBPod["Postgres StatefulSet"]
+      Portfolio_Frontend_Pod
+      Portfolio_Backend_Pod
     end
+
+    CloudflareEdge --> TunnelPod
+    ArgoCD --> Workloads
+    TunnelPod --> Ingress
+    Ingress --> Portfolio_Frontend_Pod
+    Ingress --> Portfolio_Backend_Pod
+    Workloads --> GHCR
   end
-
-  Workloads -- Kubelet pulls image --> GHCR
-  ArgoCD -- Updates Manifest --> Workloads
-  TunnelPod -- Internal K8s Service --> Ingress
-  Ingress -- Route --> AppPod
-  AppPod -- Internal Service --> DBPod
-
-  CloudflareEdge -- QUIC/HTTPS --> TunnelPod
-  Git -- CI Check --> ALint & CiCheck
-  CiCheck --> Trivy
-  ALint -- Deploy --> Molecule
-  Molecule -- Deploy --> SSHD1
-  Trivy -- Build/Push --> GHCR
-
-  SSH1 & SSH2 -- Tailscale Tunnel --> SSHD1
-
-  Alloy -- Scrape Logs --> DLogs
-  Alloy -- Remote Write --> Prom
-  Alloy -- Loki Push --> Loki
-  Alloy -- OTLP --> Tempo
-  Prom & Loki & Tempo -- Query --> Grafana
-  Prom -- Alerting Rules --> AManager --> Slack
-
-  Frontend2 -. Frontend Logs/Traces .-> Alloy
-  OTLPDep & OTLPDep2 -. OTLP Metrics & Spans .-> Alloy
-  PostgresExporter -- Scrapes Metrics --> Postgres
-  PostgresExporter -. Metrics :9187 .-> Alloy
 
 
 ```
