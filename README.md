@@ -39,7 +39,7 @@ I am very obsessed with tech and infrastructure and that's what keeps me to do w
 > Currently my infrastructure repo private for privacy and security reasons
 
 🎯 Current Goal:
-- Designing and Building Distributed System by using Kubernetes + Terraform + Cloud Providers
+- Designing and Building Distributed System by using Kubernetes + Terraform + Cloud Providers(AWS or DO)
 - Experiment on 3 Way Distributed Database load test, indexing, and migration.
 - Applying High level System Design Concepts on Systems & Applications
 - Studying networking fundamentals to reduce my weakpoints by building my own http engine.
