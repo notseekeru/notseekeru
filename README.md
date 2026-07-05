@@ -46,11 +46,6 @@ I am very obsessed with tech and infrastructure and that's what keeps me to do w
 
 ---
 
-<p align="center">
-  <img width="41%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=notseekeru&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=00B8FF&text_color=EEEEEE" />
-  <img width="58%" src="https://github-readme-streak-stats.herokuapp.com/?user=notseekeru&theme=dark&hide_border=true&background=0D1117&stroke=00B8FF&ring=00B8FF&fire=00B8FF&currStreakNum=EEEEEE" />
-</p>
-
 <details>
 <summary>📡 Click to expand full infrastructure diagram (June 13, 2026)</summary>
 
