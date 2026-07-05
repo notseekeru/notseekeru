@@ -216,16 +216,6 @@ flowchart TB
 
 ---
 
-## 📝 Featured Blog Posts
-
-_From my [portfolio blog](https://portfolio.seekeru.tech/#blog)_
-
-- 🔥 [**Telemetry Madness**](https://portfolio.seekeru.tech/blog/telemetry-madness) – _I let AI generate my observability stack, then watched it fail silently. Rebuilt from first principles with curl, Alloy, and an MVP OpenTelemetry app._
-- ⏱️ [**SRE Steps**](https://portfolio.seekeru.tech/blog/sre-steps) – _Building a reliable kill script to measure real MTTD/MTTR in containerized infrastructure._
-- 🛡️ [**Imposter Syndrome**](https://portfolio.seekeru.tech/blog/imposter-syndrome) – _Escaping the blackbox with the fundamentals._
-
----
-
 ## 📫 Let's Connect
 
 I'm looking for **internship / entry‑level** opportunities (remote or hybrid).
