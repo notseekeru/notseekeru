@@ -50,7 +50,6 @@ I am very obsessed with tech and infrastructure and that's what keeps me to do w
 <summary>📡 Click to expand full infrastructure diagram (June 13, 2026)</summary>
 
 ```mermaid
----
 config:
   layout: elk
 ---
