@@ -36,8 +36,6 @@
 Computer Engineering student from the Philippines, driven by hunger and a will to do the work and learn.
 I am very obsessed with tech and infrastructure and that's what keeps me to do what I do.
 
-> Currently my infrastructure repo private for privacy, topology, and security reasons
-
 🎯 Current Goal:
 - Designing and Building Distributed System by using Kubernetes + Terraform + Cloud Providers(AWS or DO)
 - Experiment on 3 Way Distributed Database load test, indexing, and migration.
