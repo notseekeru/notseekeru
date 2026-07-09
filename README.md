@@ -33,8 +33,9 @@
 
 ## 🧑‍💻 About Me
 
-Computer Engineering student from the Philippines, driven by hunger and a will to do the work and learn.
-I am very obsessed with tech and infrastructure and that's what keeps me to do what I do.
+Helloew!!!! It's an honor you stumbled upon my profile!
+To sum it up, I am just a guy very obsessed with tech and infrastructure and that's what keeps me to do what I do.
+I strive to be a person that people look up to and be the reason why they feel the hope in humans as in the current world <3
 
 🎯 Current Goal:
 - Experiment on 3 Way Distributed Database load test, indexing, and migration.
