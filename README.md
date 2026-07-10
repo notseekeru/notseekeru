@@ -44,8 +44,7 @@ I strive to be a person that people look up to and be the reason why they feel t
 
 ---
 
-<details>
-<summary>📡 Click to expand full infrastructure diagram (July 10, 2026)</summary>
+<summary>📡 Full infrastructure diagram (July 10, 2026)</summary>
 
 ```mermaid
 ---
@@ -209,8 +208,6 @@ flowchart TB
 
 
 ```
-
-</details>
 
 ---
 
