@@ -38,9 +38,9 @@ To sum it up, I am just a guy very obsessed with tech and infrastructure and tha
 I strive to be a person that people look up to and be the reason why they feel the hope in humans as in the current world <3
 
 🎯 Current Goal:
-- Experiment on 3 Way Distributed Database load test, indexing, and migration.
+- Experiment on 3 Way Distributed Database load test, indexing, and migration
 - Applying High level System Design Concepts on Systems & Applications
-- Studying networking fundamentals to reduce my weakpoints by building my own http engine.
+- Studying networking to better understand how these systems and applications communicate
 
 ---
 
