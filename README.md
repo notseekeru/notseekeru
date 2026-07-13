@@ -36,7 +36,7 @@
 Hello!!!! It's an honor you stumbled upon my profile!
 To sum it up, I am just a guy very obsessed with tech and infrastructure and that's what keeps me to do what I do.
 I'm striving to be a person that others look up to, and to be the reason they still have hope in humanity in today's world <3
-I also over-engineer alot just for learning it, naturally I just run compose-file for everything else:P
+I also over-engineer just for learning it, naturally I just run compose-file for everything else to simplify because docker is the GOAT:P
 
 🎯 Current Goal:
 - Experiment on 3 Way Distributed Database load test, indexing, and migration
