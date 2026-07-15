@@ -33,10 +33,10 @@
 
 ## 🧑‍💻 About Me
 
-Hello!!!! It's an honor you stumbled upon my profile!
-To sum it up, I am just a guy very obsessed with tech and infrastructure and that's what keeps me to do what I do.
-I'm striving to be a person that others look up to, and to be the reason they still have hope in humanity in today's world <3
-I also over-engineer just for learning it, naturally I just run compose-file for everything else to simplify because docker is the GOAT:P
+Hello!!!! It's an honor you stumbled upon my profile!  
+To sum it up, I am just a guy very obsessed with tech and infrastructure and that's what keeps me to do what I do.  
+I'm striving to be a person that others look up to, and to be the reason they still have hope in humanity in today's world <3  
+I also always eager to learn tech just for learning how it is useful, naturally I just run docker for everything for simplicity and pragmatism.  
 
 🎯 Current Goal:
 - Experiment on 3 Way Distributed Database load test, indexing, and migration
@@ -216,9 +216,8 @@ flowchart TB
 
 ## 📫 Let's Connect
 
-I'm looking for **internship / entry‑level** opportunities (remote or hybrid).
-or if you just talk in general about tech or even be my peer then you can message me! (I would be glad to)
-Let's move forward together!
+I'm looking for **internship / entry‑level** opportunities (remote or hybrid).  
+or if you just talk in general about tech or even be my friend then you can approach me! (I would be glad to)   
 
 - 📧 [stpmacabulos@gmail.com](mailto:stpmacabulos@gmail.com)
 - 🔗 [LinkedIn](https://linkedin.com/in/stephen-macabulos)
