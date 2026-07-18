@@ -33,16 +33,17 @@
 
 ## 🧑‍💻 About Me
 
-To sum it up, I am just a guy very obsessed with tech and infrastructure and that's what keeps me to do what I do.
+To sum it up, I am just a guy very obsessed with tech and infrastructure and that's what keeps me to do what I do.  
 I also always eager to learn tech just for learning how it is useful and how does it work.  
 Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.
 
 🎯 Current Goal:
 
-- Experiment on 3 Way Distributed Database load test, indexing, and migration
-- Applying High level System Design Concepts on Systems & Applications
+- Migrate to a unmanaged Kubernetes using k3s in my homelab.
+- Experiment on 3 Way Distributed Database load test, deployment patterns, indexing, and migration.
+- Applying High level System Design Concepts on Systems & Applications.
 - Building Production Ready Auth Library from Scratch, reinventing the wheel to understand the wheel.
-- Studying networking to better understand how these systems and applications communicate
+- Studying Layer 4 networking to better understand how these systems and applications communicate.
 
 ---
 
