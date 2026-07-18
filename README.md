@@ -59,6 +59,7 @@ flowchart TB
         Users["End Users"]
         Slack["Slack Channel"]
         CloudflareEdge["Cloudflare Edge (DNS + SSL)"]
+        Infisical["Infisical Secret Platform"]
   end
  subgraph Repositories["Source Repositories"]
         Git["Infra & Code Repo"]
@@ -205,9 +206,13 @@ flowchart TB
     Workloads -. Pulls Validated Images .-> GHCR
     CloudflareEdge -- Secure Tunnel --> TunnelPod
     TunnelPod --> Ingress
-    Ingress --> Portfolio_Frontend_Pod & Portfolio_Backend_Pod & Frontend2 & Nodejs2
-    Nodejs2 --> DO_DB
+    Ingress --> Portfolio_Frontend_Pod & Portfolio_Backend_Pod & Frontend2 & Backend2
     AManager -- Webhook Alerts --> Slack
+
+    %% Infisical Integrations
+    Infisical -. "Pulls Configuration Secrets" .-> Terraform
+    Infisical -. "Lookup Static Configuration Secrets" .-> Ansible
+    Terraform -- "Creates Secret Resource (via Variables)" --> DOKS
 
 
 ```
