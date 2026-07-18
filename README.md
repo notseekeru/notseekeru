@@ -33,19 +33,20 @@
 
 ## 🧑‍💻 About Me
 
-Hello!!!! It's an honor you stumbled upon my profile!  
-To sum it up, I am just a guy very obsessed with tech and infrastructure and that's what keeps me to do what I do.  
-I'm striving to be a person that others look up to, and to be the reason they still have hope in humanity in today's world <3  
-I also always eager to learn tech just for learning how it is useful, naturally I just run docker for everything for simplicity and pragmatism.  
+To sum it up, I am just a guy very obsessed with tech and infrastructure and that's what keeps me to do what I do.
+I also always eager to learn tech just for learning how it is useful and how does it work.  
+Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.
 
 🎯 Current Goal:
+
 - Experiment on 3 Way Distributed Database load test, indexing, and migration
 - Applying High level System Design Concepts on Systems & Applications
+- Building Production Ready Auth Library from Scratch, reinventing the wheel to understand the wheel.
 - Studying networking to better understand how these systems and applications communicate
 
 ---
 
-<summary>📡 Full infrastructure diagram (July 10, 2026)</summary>
+<summary>📡 Full infrastructure diagram (July 18, 2026)</summary>
 <details>
 
 ```mermaid
@@ -210,6 +211,7 @@ flowchart TB
 
 
 ```
+
 </details>
 
 ---
@@ -217,7 +219,7 @@ flowchart TB
 ## 📫 Let's Connect
 
 I'm looking for **internship / entry‑level** opportunities (remote or hybrid).  
-or if you just talk in general about tech or even be my friend then you can approach me! (I would be glad to)   
+or if you just talk in general about tech or even be my friend then you can approach me! (I would be glad to)
 
 - 📧 [stpmacabulos@gmail.com](mailto:stpmacabulos@gmail.com)
 - 🔗 [LinkedIn](https://linkedin.com/in/stephen-macabulos)
