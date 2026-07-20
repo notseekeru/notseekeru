@@ -42,7 +42,7 @@ Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragm
 - Migrate to a unmanaged Kubernetes using k3s in my homelab.
 - Experiment on 3 Way Distributed Database load test, deployment patterns, indexing, and migration.
 - Applying High level System Design Concepts on Systems & Applications.
-- Building Production Ready Auth Library from Scratch, reinventing the wheel to understand the wheel.
+- Building Educational Auth Library from Scratch, reinventing the wheel to understand the wheel and internals.
 - Studying Layer 4 networking to better understand how these systems and applications communicate.
 
 ---
