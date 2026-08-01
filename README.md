@@ -39,11 +39,8 @@ Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragm
 
 🎯 Current Goal:
 
-- Migrate to a unmanaged Kubernetes using k3s in my homelab.
-- Experiment on 3 Way Distributed Database load test, deployment patterns, indexing, and migration.
+- Experiment on DB Internals such as 3 Way Distributed Database load test, deployment patterns, b-trees, migration, etc.
 - Applying High level System Design Concepts on Systems & Applications.
-- Building Educational Auth Library from Scratch, reinventing the wheel to understand the wheel and internals.
-- Studying Layer 4 networking to better understand how these systems and applications communicate.
 
 ---
 
