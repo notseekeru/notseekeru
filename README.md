@@ -39,8 +39,12 @@ Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragm
 
 🎯 Current Goal:
 
-- Experiment on DB Internals such as 3 Way Distributed Database load test, deployment patterns, b-trees, migration, etc.
-- Applying High level System Design Concepts on Systems & Applications.
+- DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
+- Building real world product with FastAPI (Async Python) + NextJS + AI Rag Pipeline & Stripe Payment System and Clerk for Auth.
+- AWS SAA-C03 + Cost-Optimized Hybrid Architecture for the AWS Freetier
+- eBPF (Extended Berkeley Packet Filter) Kernel Tracing
+- DC-DC Converter PCB Design (KiCad to Real PCB)
+- 8 Bit Computer (ICs and Breadboarding)
 
 ---
 
