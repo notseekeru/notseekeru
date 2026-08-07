@@ -223,7 +223,7 @@ flowchart TB
 
 ## 📫 Let's Connect
 
-I'm looking for **internship / entry‑level** opportunities (remote or hybrid).  
+I'm looking for **internship / entry‑level** opportunities (remote and part-time).
 or if you just talk in general about tech or even be my friend then you can approach me! (I would be glad to)
 
 - 📧 [stpmacabulos@gmail.com](mailto:stpmacabulos@gmail.com)
