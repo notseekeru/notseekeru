@@ -37,7 +37,7 @@ To sum it up, I am just a guy very obsessed with tech and infrastructure and tha
 I also always eager to learn tech just for learning how it is useful and how does it work.  
 Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.
 
-🎯 Current Goal:
+🎯 Future Projects:
 
 - Rebuilding the raw TCP socket server in C to eliminate weakness C and in manual memory management and pointer arithmetic.
 - DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
