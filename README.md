@@ -39,7 +39,7 @@ Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragm
 
 🎯 Future Projects:
 
-- Rebuilding the raw TCP socket server in C to eliminate weakness C and in manual memory management and pointer arithmetic.
+- Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and pointer arithmetic.
 - DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
 - Building real world product with FastAPI (Async Python) + NextJS + AI Rag Pipeline & Stripe Payment System and Clerk for Auth.
 - AWS SAA-C03 + Cost-Optimized Hybrid Architecture for the AWS Freetier
