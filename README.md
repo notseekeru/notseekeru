@@ -1,4 +1,4 @@
-<!-- Header with dynamic stats and badges -->
+  <!-- Header with dynamic stats and badges -->
 <p align="center">
   <a href="https://portfolio.seekeru.tech"><img src="https://img.shields.io/badge/Portfolio-seekeru.tech-0A0A0A?style=flat-square&logo=githubpages&logoColor=white"></a>
   <a href="https://linkedin.com/in/stephen-macabulos"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white"></a>
@@ -34,7 +34,7 @@ Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragm
 
 🎯 Future Projects:
 
-- Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and pointer arithmetic.
+- Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
 - DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
 - Building real world product with FastAPI (Async Python) + NextJS + AI Rag Pipeline & Stripe Payment System and Clerk for Auth.
 - AWS SAA-C03 + Cost-Optimized Hybrid Architecture for the AWS Freetier
