@@ -46,7 +46,7 @@ Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragm
 
 ## 📫 Let's Connect
 
-I'm looking for **internship / entry‑level** opportunities (remote and part-time).
+I'm looking for **work** opportunities (hit me up).
 or if you just talk in general about tech or even be my friend then you can approach me! (I would be glad to)
 
 - 📧 [stpmacabulos@gmail.com](mailto:stpmacabulos@gmail.com)
