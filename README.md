@@ -26,13 +26,11 @@
 
 ---
 
-## 🧑‍💻 About Me
-
 To sum it up, I am just a guy very obsessed with tech and infrastructure and that's what keeps me to do what I do.  
 I also always eager to learn tech just for learning how it is useful and how does it work.  
 Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.
 
-🎯 Future Projects:
+🎯 Future/Ongoing Projects that I haven't learned yet:
 
 - Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
 - DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
