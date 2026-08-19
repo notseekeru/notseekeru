@@ -49,4 +49,4 @@ or if you just talk in general about tech or even be my friend then you can appr
 
 - 📧 [stpmacabulos@gmail.com](mailto:stpmacabulos@gmail.com)
 - 🔗 [LinkedIn](https://linkedin.com/in/stephen-macabulos)
-- 🌐 [Portfolio, Blogs & Infra](https://portfolio.seekeru.tech)
+- 🌐 [Portfolio, Blogs & Infra Diagram/Flowchart](https://portfolio.seekeru.tech)
