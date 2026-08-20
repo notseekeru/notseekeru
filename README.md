@@ -30,12 +30,13 @@ To sum it up, I am just a guy very obsessed with tech and infrastructure and tha
 I also always eager to learn tech just for learning how it is useful and how does it work.  
 Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.
 
-🎯 Future/Ongoing Projects that I haven't learned yet:
+🎯 Roadmap Projects that I'm going to learn:
 
+- Building real world product with FastAPI (Async Python) + AI Rag Pipeline & Stripe Payment System and Clerk for Auth.
 - Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
 - DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
-- Building real world product with FastAPI (Async Python) + AI Rag Pipeline & Stripe Payment System and Clerk for Auth.
 - AWS SAA-C03 + Cost-Optimized Hybrid Architecture for the AWS Freetier
+- Multi Node Kubernetes to learn etcd management, Fault Tolerance, Resource overhead, Scaling, Storage design, and Networking topology
 - eBPF (Extended Berkeley Packet Filter) Kernel Tracing and Networking
 - DC-DC Converter PCB Design for Engineering (KiCad to Real PCB)
 - 8 Bit Computer Architecture review (ICs and Breadboarding)
