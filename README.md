@@ -29,6 +29,7 @@
 To sum it up, I am just a guy very obsessed with tech and infrastructure and that's what keeps me to do what I do.  
 I also always eager to learn tech just for learning how it is useful and how does it work.  
 Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.
+Workflow: NixOS, Neovim, Tmux, Pi-agent + Deepseekv4 Flash (no thinking)
 
 🎯 Roadmap Projects that I'm going to learn:
 
