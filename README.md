@@ -34,6 +34,7 @@ Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragm
 
 - Building real world product with FastAPI (Async Python) + AI Rag Pipeline & Stripe Payment System and Clerk for Auth.
 - Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
+- System Design and Distributed systems
 - DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
 - AWS SAA-C03 + Cost-Optimized Hybrid Architecture for the AWS Freetier
 - Multi Node Kubernetes to learn etcd management, Fault Tolerance, Resource overhead, Scaling, Storage design, and Networking topology
