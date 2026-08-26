@@ -31,17 +31,17 @@ I also always eager to learn tech just for learning how it is useful and how doe
 Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.
 Workflow: NixOS, Neovim, Tmux, Pi-agent + Deepseekv4 Flash (no thinking)
 
-🎯 Roadmap Projects that I'm going to learn:
+🎯 Roadmap Projects (Ordered by priority):
 
 - Building real world product with FastAPI (Async Python) + AI Rag Pipeline & Stripe Payment System and Clerk for Auth.
 - Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
-- System Design and Distributed systems
-- DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
 - AWS SAA-C03 + Cost-Optimized Hybrid Architecture for the AWS Freetier
+- DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
+- System Design and Distributed systems Deep dive Study + Simulation.
 - Multi Node Kubernetes to learn etcd management, Fault Tolerance, Resource overhead, Scaling, Storage design, and Networking topology
 - eBPF (Extended Berkeley Packet Filter) Kernel Tracing and Networking
-- DC-DC Converter PCB Design for Engineering (KiCad to Real PCB)
 - 8 Bit Computer Architecture review (ICs and Breadboarding)
+- DC-DC Converter PCB Design for Engineering (KiCad to Real PCB)
 
 ---
 
