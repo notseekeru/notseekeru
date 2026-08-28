@@ -29,7 +29,7 @@
 To sum it up, I am just a computer engineering guy very obsessed with tech and infrastructure.  
 Always eager to learn tech just for learning how it is useful and how does it work.  
 Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.  
-Workflow: NixOS, Neovim, Tmux, Pi-agent + Deepseekv4 Flash (no thinking)  
+Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseekv4 Flash (no thinking) / Local qwen3-4b llama.cpp (lighter task like commit messages)
 
 🎯 Roadmap Projects (Ordered by priority):
 
