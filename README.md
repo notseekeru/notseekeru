@@ -29,16 +29,16 @@
 To sum it up, I am just a computer engineering guy very obsessed with tech and infrastructure.  
 Always eager to learn tech just for learning how it is useful and how does it work.  
 Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.  
-Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseekv4 Flash (no thinking) / Local qwen3-4b llama.cpp (lighter task like commit messages)
+
+Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseek v4 Flash (no thinking) / Local qwen3-4b llama.cpp
 
 🎯 Roadmap Projects (Ordered by priority):
 
 - Building real world product with FastAPI (Async Python) + AI Rag Pipeline & Stripe Payment System and Clerk for Auth.
 - Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
-- AWS SAA-C03 + Cost-Optimized Hybrid Architecture for the AWS Freetier
+- Multi Node Kubernetes to learn etcd management, Fault Tolerance, Draining, Scaling, Storage design, and Networking topology
 - DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
 - System Design and Distributed systems Deep dive Study + Simulation.
-- Multi Node Kubernetes to learn etcd management, Fault Tolerance, Resource overhead, Scaling, Storage design, and Networking topology
 - eBPF (Extended Berkeley Packet Filter) Kernel Tracing and Networking
 - 8 Bit Computer Architecture review (ICs and Breadboarding)
 - DC-DC Converter PCB Design for Engineering (KiCad to Real PCB)
