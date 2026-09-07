@@ -30,7 +30,9 @@ To sum it up, I am just a computer engineering guy very obsessed with tech and i
 Always eager to learn tech just for learning how it is useful and how does it work.  
 Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.  
 
-Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseek v4 Flash (no thinking) / Local qwen3-4b llama.cpp
+Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseek v4 Flash (no thinking) / Local qwen3-4b llama.cpp  
+I mainly focus on auditing architectural alignment, reproducibility, security, isolation and maintainability with AI and delegating syntax and boilerplate to agents.  
+I only write code if it's for an educational scope, just like writing http server in C or Go, or just maintaining some repositories that need manual intervention.  
 
 🎯 Roadmap Projects (Ordered by priority):
 
