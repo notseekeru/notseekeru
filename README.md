@@ -33,6 +33,7 @@ Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragm
 Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseek v4 Flash (no thinking) / Local qwen3-4b llama.cpp  
 I mainly focus on auditing architectural alignment, reproducibility, security, isolation and maintainability with AI and delegating syntax and boilerplate to agents.  
 I only write code if it's for an educational scope, just like writing http server in C or Go, or just maintaining some repositories that need manual intervention.  
+I calculate and weigh friction, scope, value, financial risk of my tool and architecture. The judgement I lay upon is the judgement that is my current reasoning and understanding.
 
 🎯 Roadmap Projects (Ordered by priority):
 
