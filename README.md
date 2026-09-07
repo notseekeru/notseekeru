@@ -30,10 +30,10 @@ To sum it up, I am just a computer engineering guy very obsessed with tech and i
 Always eager to learn tech just for learning how it is useful and how does it work.  
 Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.  
 
-My workflow consist of NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseek v4 Flash (no thinking) or Local Qwen3-4b using llama.cpp  
-Scoped my focus on auditing architectural alignment, reproducibility, declarative, security, isolation and maintainability with AI and delegating syntax and boilerplate to agents.  
-Then I calculate and weigh friction, scope, value, financial risk of my tool and architecture. The judgement I lay upon is the judgement that is my current reasoning and understanding.  
-Philosophies correlating with only write code if it's for an educational scope, just like writing http server in C or Go, or just maintaining some repositories that need manual intervention.  
+Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseek v4 Flash (no thinking) or Local Qwen3-4b using llama.cpp  
+Focus: auditing architectural alignment, scalability, reproducibility, declarative, security, isolation and maintainability with AI and delegating syntax and boilerplate to agents.  
+Calculates: weigh friction, scope, value, financial risk of my tool and architecture. The judgement I lay upon is the judgement that is my current reasoning and understanding.  
+Coding: Only write code if it's for an educational scope, just like leetcode or writing http server in C or Go, or just maintaining some repositories that need manual intervention.  
 
 🎯 Roadmap Projects (Ordered by priority):
 
