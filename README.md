@@ -37,7 +37,7 @@ Coding: Only write code if it's for an educational scope, just like leetcode or 
 
 🎯 Roadmap Projects (Ordered by priority):
 
-- Building real world product with FastAPI (Async Python) + AI Rag Pipeline & Stripe Payment System and Clerk for Auth.
+- Building real world product with FastAPI (Async Python) + AI OKF/Rag Pipeline & Stripe Payment System and Clerk for Auth.
 - Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
 - Multi Node Kubernetes to learn etcd management, Deployment patterns, Fault Tolerance, Draining, Scaling, Storage design, and Networking topology
 - DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
