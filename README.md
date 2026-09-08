@@ -39,7 +39,7 @@ Coding: Only write code if it's for an educational scope, just like leetcode or 
 
 - Building real world product with FastAPI (Async Python) + AI Rag Pipeline & Stripe Payment System and Clerk for Auth.
 - Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
-- Multi Node Kubernetes to learn etcd management, Fault Tolerance, Draining, Scaling, Storage design, and Networking topology
+- Multi Node Kubernetes to learn etcd management, Deployment patterns, Fault Tolerance, Draining, Scaling, Storage design, and Networking topology
 - DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
 - System Design and Distributed systems Deep dive Study + Simulation.
 - eBPF (Extended Berkeley Packet Filter) Kernel Tracing and Networking
