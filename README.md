@@ -43,8 +43,6 @@ Coding: Only write code if it's for an educational coding scope particularly fro
 - DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
 - System Design and Distributed systems Deep dive Study + Simulation.
 - eBPF (Extended Berkeley Packet Filter) Kernel Tracing and Networking
-- 8 Bit Computer Architecture review (ICs and Breadboarding)
-- DC-DC Converter PCB Design for Engineering (KiCad to Real PCB)
 
 ---
 
