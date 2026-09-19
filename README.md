@@ -27,23 +27,14 @@
 ---
 
 To sum it up, I am just a computer engineering guy very obsessed with tech and infrastructure.  
-Always eager to learn tech just for learning how it is useful and how does it work.  
-Learning, Experimenting, Tinkering is the journey, Simplicity, Clarity and Pragmatism are the end goal.  
-
-Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseek v4 Flash or Local Qwen3-4b using llama.cpp  
-Focus: auditing architectural alignment, scalability, reproducibility, declarative, security, isolation and maintainability with AI and delegating syntax and boilerplate to agents.  
-Calculates: weigh friction, scope, value, financial risk of my tool and architecture. The judgement I lay upon is the judgement that is my current reasoning, feedback and understanding.  
-Coding: Only write code if it's for an educational coding scope particularly from scratch coding, and just maintaining reoi that need manual lookups. Usually I just ship features fast.  
+Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseek v4 Flash / Local Llama.cpp 
 
 🎯 Roadmap Projects (Ordered by priority):
 
 - Building real world product with FastAPI (Async Python) + AI OKF/Rag Pipeline & PayMongo Payment System & Clerk for Auth.
 - Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
 - Multi Node Kubernetes to learn etcd management, Deployment patterns, Fault Tolerance, Draining, Scaling, Storage design, and Networking topology
-- DB Internals (3 Way Distributed Database load test, WAL, Connection Pooling, Bouncer, Deployment Patterns, B-trees, Migration, etc...)
-- System Design and Distributed systems Deep dive Study + Simulation.
-- eBPF (Extended Berkeley Packet Filter) Kernel Tracing and Networking
-
+- DB Internals, System Design and Distributed systems (DDIA, Distributed Database load, Sharding, WAL, Pooling, Bouncer, Caching & Deployment Strategies, etc...)
 ---
 
 ## 📫 Let's Connect
