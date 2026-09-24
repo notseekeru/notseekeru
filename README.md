@@ -38,9 +38,9 @@ Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseek v4 Flash / Loc
 
 ## 📫 Let's Connect
 
-I'm looking for **work** opportunities (hit me up).  
-or if you just talk in general about tech or even be my friend then you can approach me! (I would be glad to)
+Open for work opportunities.
 
+- 💬 [Instagram](https://instagram.com/notseekeru)
 - 📧 [stpmacabulos@gmail.com](mailto:stpmacabulos@gmail.com)
 - 🔗 [LinkedIn](https://linkedin.com/in/stephen-macabulos)
-- 🌐 [Portfolio, Blogs & Infra Diagram/Flowchart](https://portfolio.seekeru.tech)
+- 🌐 [Portfolio, Projects, Blogs & Infra](https://portfolio.seekeru.tech)
