@@ -31,7 +31,6 @@ Workflow: NixOS, Neovim, Tmux, Pi-agent with AGENTS.md + Deepseek v4 Flash / Loc
 
 🎯 Roadmap Projects (Ordered by priority):
 
-- Building real world product with FastAPI (Async Python) + AI OKF/Rag Pipeline & PayMongo Payment System & Clerk for Auth.
 - Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
 - Multi Node Kubernetes to learn etcd management, Deployment patterns, Fault Tolerance, Draining, Scaling, Storage design, and Networking topology
 - DB Internals, System Design and Distributed systems (DDIA, Distributed Database load, Sharding, WAL, Pooling, Bouncer, Caching & Deployment Strategies, etc...)
