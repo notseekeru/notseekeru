@@ -31,6 +31,7 @@ Workflow: NixOS, Neovim, Tmux, Pi-agent + Deepseek v4 Flash
 
 🎯 Roadmap Projects (Ordered by priority):
 
+- k6 for benchmarking web application performance, load and stress testing machines, capturing golden signals(latency, error, ...)
 - Rebuilding the raw TCP socket server in C to eliminate weakness in C and in manual memory management and os internals.
 - DB Internals, System Design and Distributed systems (DDIA, Distributed Database load, Sharding, WAL, Pooling, Bouncer, Caching & Deployment Strategies, etc...)
 - Multi Node Kubernetes to learn etcd management, Deployment patterns, Fault Tolerance, Draining, Scaling, Storage design, and Networking topology
