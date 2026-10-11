@@ -26,7 +26,8 @@
 
 ---
 
-just a enthusiastic computer engineering undergrad with a passion for technology.  
+just an enthusiastic computer engineering undergrad with a passion for technology.  
+
 Workflow: NixOS, Neovim, Tmux, Pi-agent + Deepseek v4 Flash  
 
 🎯 Roadmap Projects (Ordered by priority):
