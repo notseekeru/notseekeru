@@ -28,7 +28,7 @@
 
 just an enthusiastic computer engineering undergrad with a passion for technology.  
 
-Workflow: NixOS, Neovim, Tmux, Pi-agent + Deepseek v4.1 Flash  
+Workflow: NixOS, Neovim, Tmux, Pi-agent + Deepseek v4.1 Flash 1017  
 
 🎯 Roadmap Projects (Ordered by priority):
 
